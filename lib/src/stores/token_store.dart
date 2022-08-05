@@ -1,5 +1,7 @@
 import 'dart:io';
 
+import 'package:path/path.dart' as path;
+
 import '../data/models/alfabeto_model.dart';
 import '../domain/entities/token.dart';
 import '../domain/usecases/i_usecase.dart';
@@ -42,7 +44,15 @@ class TokenStore {
       ),
     );
     alfabeto = AlfabetoModel.fromJson(
-      File('./alfabeto.json').readAsStringSync(),
+      File(
+        path.joinAll(
+          [
+            '..\\',
+            'T1-OtavioPontes-20221',
+            'alfabeto.json',
+          ],
+        ),
+      ).readAsStringSync(),
     );
   }
 

@@ -1,9 +1,5 @@
-import 'domain/usecases/scanner/get_codigo_fonte_from_file_usecase.dart';
-import 'domain/usecases/tokens/get_tokens_from_palavras_reservadas_usecase.dart';
-import 'errors/failures/failures.dart';
-import 'stores/dfa_store.dart';
-import 'stores/scanner_store.dart';
-import 'stores/token_store.dart';
+import 'package:analisador_lexico/analisador_lexico.dart';
+import 'package:analisador_lexico/src/errors/failures/failures.dart';
 
 void main() async {
   final TokenStore tokenStore = TokenStore(

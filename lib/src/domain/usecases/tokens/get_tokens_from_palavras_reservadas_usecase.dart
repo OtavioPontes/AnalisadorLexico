@@ -2,6 +2,7 @@ import 'dart:convert';
 import 'dart:io';
 
 import 'package:dartz/dartz.dart';
+import 'package:path/path.dart' as path;
 
 import '../../../data/models/token_model.dart';
 import '../../../errors/failures/failures.dart';
@@ -15,7 +16,15 @@ class GetTokensFromPalavrasReservadasUsecase
   Either<IFailure, List<Token>> call(params) {
     try {
       final List<dynamic> jsonPalavrasReservadas = json.decode(
-        File('./palavras_reservadas.json').readAsStringSync(),
+        File(
+          path.joinAll(
+            [
+              '..\\',
+              'T1-OtavioPontes-20221',
+              'palavras_reservadas.json',
+            ],
+          ),
+        ).readAsStringSync(),
       );
 
       final List<Token> tokensFromPalavrasReservadas = List.generate(

@@ -1,14 +1,15 @@
 name: analisador_lexico
-description: Analisador Léxixo
+description: Analisador Léxico
 
-publish_to: "none"
-
-version: 1.0.0
+homepage:
+publish_to: none
+version: 0.0.1
 
 environment:
   sdk: ">=2.12.0 <3.0.0"
 
 dependencies:
+  path: 1.8.2
 
 dev_dependencies:
   analyzer: 4.1.0
