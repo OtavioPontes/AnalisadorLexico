@@ -32,11 +32,11 @@ class ScannerStore {
     );
   }
 
-  Future<Token?> scanner({
+  Token? scanner({
     required List<String> codigoFonte,
     int? rowPar,
     int? columnPar,
-  }) async {
+  }) {
     if (rowPar != null) tokenStore.row = rowPar;
     if (columnPar != null) tokenStore.column = columnPar;
 

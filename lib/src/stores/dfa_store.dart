@@ -329,11 +329,6 @@ class DFAStore {
               }
               break;
             case 11:
-              token ??= Token(
-                lexema: tokenStore.lexemaLido,
-                classe: EnumTipoToken.Comentario.toFormattedString,
-              );
-
               break;
             case 12:
               token ??= Token(
