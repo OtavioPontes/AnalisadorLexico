@@ -40,14 +40,14 @@
         "lexema": "fimse"
     },
     {
-        "classe": "Repita",
-        "tipo": "Repita",
-        "lexema": "Repita"
+        "classe": "repita",
+        "tipo": "repita",
+        "lexema": "repita"
     },
     {
-        "classe": "fimRepita",
-        "tipo": "fimRepita",
-        "lexema": "fimRepita"
+        "classe": "fimrepita",
+        "tipo": "fimrepita",
+        "lexema": "fimrepita"
     },
     {
         "classe": "fim",
