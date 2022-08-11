@@ -1,5 +1,4 @@
 import 'package:analisador_lexico/analisador_lexico.dart';
-import 'package:analisador_lexico/src/errors/failures/failures.dart';
 
 void main() async {
   final TokenStore tokenStore = TokenStore(
@@ -16,7 +15,7 @@ void main() async {
 
   while (!tokenStore.isOver) {
     print(
-      await scannerStore.scanner(
+      scannerStore.scanner(
         codigoFonte: scannerStore.codigoFonte,
         rowPar: tokenStore.row,
         columnPar: tokenStore.column,
